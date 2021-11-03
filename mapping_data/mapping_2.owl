@@ -1,0 +1,138 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/book1256/ontologies/2021/6/untitled-ontology-33#"
+     xml:base="http://www.semanticweb.org/book1256/ontologies/2021/6/untitled-ontology-33"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:ns="http://creativecommons.org/ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:xsp="http://www.owl-ontologies.com/2005/08/07/xsp.owl#"
+     xmlns:doap="http://usefulinc.com/ns/doap#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:prov="http://www.w3.org/ns/prov#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:void="http://rdfs.org/ns/void#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:owlapi="http://www.semanticweb.org/owlapi#"
+     xmlns:schema="http://schema.org/"
+     xmlns:travel="http://vocab.deri.ie/travel#"
+     xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
+     xmlns:ontology="http://omv.ontoware.org/2005/05/ontology#"
+     xmlns:base_ontology="https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#"
+     xmlns:ontologyMetadata="http://mmisw.org/ont/mmi/20081020/ontologyMetadata/"
+     xmlns:Ontology1318785573683="http://www.semanticweb.org/ontologies/2011/9/Ontology1318785573683.owl#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/book1256/ontologies/2021/6/untitled-ontology-33">
+        <owl:imports rdf:resource="http://mmisw.org/ont/univmemphis/sensor"/>
+        <owl:imports rdf:resource="http://www.csiro.au/Ontologies/2009/SensorOntology.owl"/>
+        <owl:imports rdf:resource="http://www.owl-ontologies.com/mason.owl"/>
+        <owl:imports rdf:resource="http://www.purl.org/oema/ontologynetwork"/>
+        <owl:imports rdf:resource="http://www.semanticweb.org/ontologies/2011/9/Ontology1318785573683.owl"/>
+        <owl:imports rdf:resource="http://www.w3.org/ns/ssn/"/>
+        <owl:imports rdf:resource="https://git.onem2m.org/MAS/BaseOntology/raw/3_6_0/base_ontology.owl"/>
+        <owl:imports rdf:resource="https://saref.etsi.org/saref4ener/v1.1.2/"/>
+        <owl:imports rdf:resource="https://w3id.org/saref"/>
+        <owl:imports rdf:resource="https://w3id.org/def/openadr"/>
+        <owl:imports rdf:resource="https://w3id.org/i40/aml#"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://mmisw.org/ont/univmemphis/sensor/Event -->
+
+    <rdf:Description rdf:about="http://mmisw.org/ont/univmemphis/sensor/Event">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/openadr#Event"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://mmisw.org/ont/univmemphis/sensor/TimePrimitive -->
+
+    <rdf:Description rdf:about="http://mmisw.org/ont/univmemphis/sensor/TimePrimitive">
+        <owl:equivalentClass rdf:resource="http://www.w3.org/2006/time#TemporalEntity"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://vocab.deri.ie/orgs#Department -->
+
+    <rdf:Description rdf:about="http://vocab.deri.ie/orgs#Department">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/openadr#Resource"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.owl-ontologies.com/mason.owl#Resource -->
+
+    <rdf:Description rdf:about="http://www.owl-ontologies.com/mason.owl#Resource">
+        <owl:equivalentClass rdf:resource="https://w3id.org/def/openadr#Resource"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.owl-ontologies.com/mason.owl#Scheduling -->
+
+    <rdf:Description rdf:about="http://www.owl-ontologies.com/mason.owl#Scheduling">
+        <owl:equivalentClass rdf:resource="https://w3id.org/def/openadr#Schedule"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.w3.org/2006/time#TemporalEntity -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2006/time#TemporalEntity"/>
+    
+
+
+    <!-- https://saref.etsi.org/saref4ener/LoadControlEventData -->
+
+    <rdf:Description rdf:about="https://saref.etsi.org/saref4ener/LoadControlEventData">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/openadr#Event"/>
+    </rdf:Description>
+    
+
+
+    <!-- https://w3id.org/def/openadr#EventStatus -->
+
+    <rdf:Description rdf:about="https://w3id.org/def/openadr#EventStatus">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/saref#State"/>
+    </rdf:Description>
+    
+
+
+    <!-- https://w3id.org/def/openadr#Item -->
+
+    <rdf:Description rdf:about="https://w3id.org/def/openadr#Item">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/saref#Property"/>
+    </rdf:Description>
+    
+
+
+    <!-- https://w3id.org/def/openadr#Resource -->
+
+    <rdf:Description rdf:about="https://w3id.org/def/openadr#Resource"/>
+    
+
+
+    <!-- https://w3id.org/def/openadr#Schedule -->
+
+    <rdf:Description rdf:about="https://w3id.org/def/openadr#Schedule"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
